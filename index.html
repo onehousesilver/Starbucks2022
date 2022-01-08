@@ -41,7 +41,9 @@
   <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
   <!-- Scroll Magic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script defer src="./js/youtube.js"></script>
   <script defer src="./js/main.js"></script>
@@ -381,12 +383,11 @@
     </div>
     <!-- BADGES -->
     <div class="badges">
-      <div class="badge">
-        <img src="./images/badge1.jpg" alt="Badge">
-      </div>
 
       <div class="badge">
-        <img src="./images/badge2.jpg" alt="Badge">
+        <a href="https://www.starbucks.co.kr/plcc/promotionView.do?eventCode=STH02">
+          <img src="./images/badge2.png" alt="Badge">
+        </a>
       </div>
     </div>
   </header>
@@ -397,19 +398,18 @@
     <div class="inner">
 
       <div class="title fade-in">
-        <img src="./images/visual_title.png" alt="STARBUCKS DELITFUL START TO THE YEAR">
-        <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
+        <img src="./images/visual_title.png" alt="">
       </div>
       <div class="fade-in">
-        <img src="./images/visual_cup1.png" alt="new OATMEAL LATTE" class="cup1 image">
-        <img src="./images/visual_cup1_text.png" alt="오트밀 라떼" class="cup1 text">
+        <img src="./images/visual_cup3.png" alt="" class="cup3 image">
       </div>
       <div class="fade-in">
-        <img src="./images/visual_cup2.png" alt="new STARTBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 image">
-        <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text">
+        <img src="./images/visual_cup2.png" alt="" class="cup2 image">
       </div>
       <div class="fade-in">
-        <img src="./images/visual_spoon.png" alt="Spoon" class="spoon">
+        <img src="./images/visual_cup1.png" alt="" class="cup1 image">
+        <a href="https://www.starbucks.co.kr/whats_new/campaign_view.do?pro_seq=1929" class="btn btn--green fade-in">자세히
+          보기</a>
       </div>
 
     </div>
@@ -451,7 +451,7 @@
         <div class="inner__right">
           <h2>스타벅스 프로모션</h2>
           <div class="toggle-promotion open">
-            <div class="material-icons">upload</div>
+            <div class="material-icons">expand_circle_down</div>
           </div>
         </div>
       </div>
@@ -472,22 +472,14 @@
             <img src="./images/promotion_slide3.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!">
             <a href="javascript:void(0)" class="btn">자세히 보기</a>
           </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide4.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!">
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/promotion_slide5.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!">
-            <a href="javascript:void(0)" class="btn">자세히 보기</a>
-          </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-prev">
-        <div class="material-icons">arrow_back</div>
+        <div class="material-icons">arrow_back_ios</div>
       </div>
       <div class="swiper-next">
-        <div class="material-icons">arrow_forward</div>
+        <div class="material-icons">arrow_forward_ios</div>
       </div>
     </div>
     </div>
@@ -495,13 +487,16 @@
 
   <!-- REWARDS -->
   <section class="rewards">
-    <div class="bg-left">
+    <div class="bg">
 
     </div>
-    <div class="bg-right">
 
+    <div class="rewards-logo">
     </div>
     <div class="inner">
+      <div class="rewards-logo">
+        <img src="./images/rewards_logo.png" alt="" class="logo-img">
+      </div>
       <div class="btn-group">
         <div class="btn btn--reverse sign-up">회원가입</div>
         <div class="btn sign-in">로그인</div>
@@ -511,28 +506,13 @@
   </section>
 
 
-  <!-- YOUTUBE VIDEO -->
-  <section class="youtube">
-    <div class="youtube__area">
-      <div id="player"></div>
-    </div>
-    </div>
-    <div class="youtube__cover"></div>
-    <div class="inner">
-      <img src="./images/floating1.png" alt="icon" class="floating floating1">
-      <img src="./images/floating2.png" alt="icon" class="floating floating2">
-    </div>
-  </section>
-
   <!-- SEASON PRODUCT -->
   <section class="season-product scroll-spy">
     <div class="inner">
-      <img src="./images/floating3.png" alt="icon" class="floating floating3">
       <img src="./images/season_product_image.png" alt="" class="product back-to-position to-right delay-0">
 
-      <div class="text-group">
+      <div class="text">
         <img src="./images/season_product_text1.png" alt="" class="title back-to-position to-left delay-1">
-        <img src="./images/season_product_text2.png" alt="" class="description back-to-position to-left delay-2">
         <div class="more back-to-position to-left delay-3">
           <a href="javascript:void(0)" class="btn">자세히 보기</a>
         </div>
@@ -540,11 +520,9 @@
     </div>
   </section>
 
-  <!-- RESERVE COFFEE -->
+  <!-- HAWAI COFFEE -->
   <section class="reserve-coffee scroll-spy">
     <div class="inner">
-
-      <img src="./images/reserve_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0">
 
       <div class="text-group">
         <img src="./images/reserve_text.png" alt="" class="description back-to-position to-right delay-1">
@@ -552,8 +530,6 @@
           <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
         </div>
       </div>
-
-      <img src="./images/reserve_image.png" alt="" class="product back-to-position to-left delay-4">
 
     </div>
   </section>
@@ -563,7 +539,10 @@
 
   <section class="pick-your-favorite scroll-spy">
     <div class="inner">
-
+      
+      <div class="img-group">
+        <img src="./images/favorite_imgs.png" alt="">
+      </div>
       <div class="text-group">
         <img src="./images/favorite_text1.png" alt="" class="title back-to-position to-right delay-0">
         <img src="./images/favorite_text2.png" alt="" class="description back-to-position to-right delay-1">
@@ -571,6 +550,7 @@
           <a href="javascript:void(0)" class="btn btn--white back-to-position to-right delay-2">자세히 보기</a>
         </div>
       </div>
+
     </div>
   </section>
 

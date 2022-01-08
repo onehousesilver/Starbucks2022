@@ -24,34 +24,36 @@ searchInputEl.addEventListener('blur', function () {
 // searchEl과 searchInputEl에서 정확한 요소로 타겟팅! 실수하지 않기
 
 
-const badgeEl = document.querySelector('header .badges');
+// const badgeEl = document.querySelector('header .badges');
 
-window.addEventListener('scroll', _.throttle(function () {
-  console.log(window.scrollY)
-  if (window.scrollY > 500) {
-    // 배지 숨기기
-    // gsap.to(요소, 지속시간, 옵션)
-    gsap.to(badgeEl, 0.6, {
-      opacity: 0,
-      display: 'none'
-    });
+// window.addEventListener('scroll', _.throttle(function () {
+//   console.log(window.scrollY)
+//   if (window.scrollY > 500) {
+//     // 배지 숨기기
+//     // gsap.to(요소, 지속시간, 옵션)
+//     gsap.to(badgeEl, 0.6, {
+//       opacity: 0,
+//       display: 'none'
+//     });
 
-  } else {
-    // 배지 보이기
-    gsap.to(badgeEl, 0.6, {
-      opacity: 1,
-      display: 'block'
-    });
+//   } else {
+//     // 배지 보이기
+//     gsap.to(badgeEl, 0.6, {
+//       opacity: 1,
+//       display: 'block'
+//     });
 
-  }
-}, 300));
+//   }
+// }, 300));
 
 // _.throttle(함수, 시간)
 
+
+// 메인페이지 visual 나오는 순서
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function (fadeEl, index) {
-  gsap.to(fadeEl, 1, {
-    delay: (index + 1) * .7,
+  gsap.to(fadeEl, .3, {
+    delay: (index + 1) * .5,
     opacity: 1,
   });
 });
@@ -69,7 +71,7 @@ new Swiper('.promotion .swiper-container', {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 5000
+    delay: 1700
   },
   pagination: {
     el: '.promotion .swiper-pagination', //페이지 번호 요소 선택자
